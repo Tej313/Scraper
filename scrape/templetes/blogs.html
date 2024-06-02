@@ -1,0 +1,14 @@
+<!doctype html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>{{ user.name }}'s Blog Posts</title>
+</head>
+<body>
+    <h1>Blog Posts by {{ user.name }}</h1>
+    {% for post in user.posts %}
+        <h2>{{ post.title }}</h2>
+        <p>{{ post.content }}</p>
+    {% endfor %}
+</body>
+</html>
